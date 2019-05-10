@@ -1,0 +1,21 @@
+[package]
+name = "sjone"
+version = "0.1.0"
+authors = ["Adam Spofford <pieflavor.mc@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+lpc176x-5x = { version = "0.3.1", features = ["rt-no-cortex"] }
+freertos_rs = { version = "0.2.0", optional = true }
+r0 = "0.2.2"
+atomic = "0.4.3"
+cortex-m-rt-macros = "0.1.5"
+
+[features]
+freertos = ["freertos_rs"]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

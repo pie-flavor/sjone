@@ -1,0 +1,14 @@
+[[package]]
+name = "freertos_rs"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "sjone"
+version = "0.1.0"
+dependencies = [
+ "freertos_rs 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[metadata]
+"checksum freertos_rs 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "d185fd6008f00cea35d1abbf885bfdbdc33b784b4a79788a56ba0441355dac68"
